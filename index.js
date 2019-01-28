@@ -43,6 +43,7 @@
   const version = major_version + 'u' + update_number;
 
   const jreDir = exports.jreDir = () => path.join(__dirname, 'jre');
+  exports.binDir = () => path.join(__dirname, 'jre', 'jre1.8.0_131', 'bin');
 
   const fail = reason => {
     console.error(reason);
